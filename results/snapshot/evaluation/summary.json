@@ -1,0 +1,90 @@
+{
+  "route_mode": "snapshot",
+  "first_seed": 2000,
+  "last_seed": 2063,
+  "checkpoint_update": 320,
+  "training_maps": [
+    0,
+    2
+  ],
+  "summaries": [
+    {
+      "map_id": 0,
+      "policy": "ppo",
+      "episodes": 64,
+      "goals": 64,
+      "collisions": 0,
+      "timeouts": 0,
+      "mean_episode_return": 83.0070571899414,
+      "success_rate": 1.0,
+      "collision_rate": 0.0,
+      "mean_episode_length": 73.921875,
+      "mean_distance_to_goal_m": 0.5024402737617493
+    },
+    {
+      "map_id": 0,
+      "policy": "random",
+      "episodes": 64,
+      "goals": 0,
+      "collisions": 14,
+      "timeouts": 50,
+      "mean_episode_return": -8.880563735961914,
+      "success_rate": 0.0,
+      "collision_rate": 0.21875,
+      "mean_episode_length": 182.3125,
+      "mean_distance_to_goal_m": 43.77735137939453
+    },
+    {
+      "map_id": 1,
+      "policy": "ppo",
+      "episodes": 64,
+      "goals": 64,
+      "collisions": 0,
+      "timeouts": 0,
+      "mean_episode_return": 82.96406555175781,
+      "success_rate": 1.0,
+      "collision_rate": 0.0,
+      "mean_episode_length": 73.609375,
+      "mean_distance_to_goal_m": 0.7087092399597168
+    },
+    {
+      "map_id": 1,
+      "policy": "random",
+      "episodes": 64,
+      "goals": 0,
+      "collisions": 14,
+      "timeouts": 50,
+      "mean_episode_return": -8.880563735961914,
+      "success_rate": 0.0,
+      "collision_rate": 0.21875,
+      "mean_episode_length": 182.3125,
+      "mean_distance_to_goal_m": 43.77735137939453
+    },
+    {
+      "map_id": 2,
+      "policy": "ppo",
+      "episodes": 64,
+      "goals": 0,
+      "collisions": 20,
+      "timeouts": 44,
+      "mean_episode_return": 17.474607467651367,
+      "success_rate": 0.0,
+      "collision_rate": 0.3125,
+      "mean_episode_length": 154.34375,
+      "mean_distance_to_goal_m": 11.319350242614746
+    },
+    {
+      "map_id": 2,
+      "policy": "random",
+      "episodes": 64,
+      "goals": 0,
+      "collisions": 34,
+      "timeouts": 30,
+      "mean_episode_return": -24.97098159790039,
+      "success_rate": 0.0,
+      "collision_rate": 0.53125,
+      "mean_episode_length": 161.625,
+      "mean_distance_to_goal_m": 47.05349349975586
+    }
+  ]
+}
