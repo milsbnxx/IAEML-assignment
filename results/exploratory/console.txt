@@ -1,0 +1,71 @@
+Single-map prototype training
+update 1/160, steps 2048, finished 3, goals 0, collisions 3
+update 10/160, steps 20480, finished 20, goals 3, collisions 17
+update 20/160, steps 40960, finished 16, goals 1, collisions 12
+update 30/160, steps 61440, finished 14, goals 5, collisions 9
+update 40/160, steps 81920, finished 26, goals 10, collisions 16
+update 50/160, steps 102400, finished 23, goals 18, collisions 5
+update 60/160, steps 122880, finished 30, goals 19, collisions 11
+update 70/160, steps 143360, finished 26, goals 18, collisions 8
+update 80/160, steps 163840, finished 26, goals 24, collisions 2
+update 90/160, steps 184320, finished 24, goals 24, collisions 0
+update 100/160, steps 204800, finished 25, goals 25, collisions 0
+update 110/160, steps 225280, finished 28, goals 27, collisions 1
+update 120/160, steps 245760, finished 25, goals 25, collisions 0
+update 130/160, steps 266240, finished 28, goals 28, collisions 0
+update 140/160, steps 286720, finished 28, goals 28, collisions 0
+update 150/160, steps 307200, finished 26, goals 26, collisions 0
+update 160/160, steps 327680, finished 26, goals 26, collisions 0
+Saved checkpoints/ppo.msgpack, reload action [ 0.9447934  -0.74106145], measured update loop 8.5 s
+
+Single-map prototype evaluation, seeds 1000-1063
+map 0 ppo: 64/64 goals, 0 collisions, 0 timeouts
+map 0 random: 0/64 goals, 12 collisions, 52 timeouts
+map 1 ppo: 64/64 goals, 0 collisions, 0 timeouts
+map 1 random: 0/64 goals, 12 collisions, 52 timeouts
+map 2 ppo: 0/64 goals, 64 collisions, 0 timeouts
+map 2 random: 0/64 goals, 39 collisions, 25 timeouts
+
+Two-map prototype training
+update 1/320, steps 2048, finished 3, goals 0, collisions 3
+update 10/320, steps 20480, finished 9, goals 0, collisions 7
+update 20/320, steps 40960, finished 17, goals 0, collisions 0
+update 30/320, steps 61440, finished 7, goals 1, collisions 0
+update 40/320, steps 81920, finished 11, goals 0, collisions 0
+update 50/320, steps 102400, finished 14, goals 1, collisions 1
+update 60/320, steps 122880, finished 11, goals 0, collisions 7
+update 70/320, steps 143360, finished 8, goals 0, collisions 2
+update 80/320, steps 163840, finished 9, goals 0, collisions 1
+update 90/320, steps 184320, finished 14, goals 0, collisions 0
+update 100/320, steps 204800, finished 10, goals 0, collisions 0
+update 110/320, steps 225280, finished 11, goals 0, collisions 1
+update 120/320, steps 245760, finished 12, goals 0, collisions 0
+update 130/320, steps 266240, finished 10, goals 0, collisions 0
+update 140/320, steps 286720, finished 12, goals 0, collisions 1
+update 150/320, steps 307200, finished 9, goals 0, collisions 0
+update 160/320, steps 327680, finished 12, goals 0, collisions 1
+update 170/320, steps 348160, finished 11, goals 0, collisions 0
+update 180/320, steps 368640, finished 9, goals 0, collisions 0
+update 190/320, steps 389120, finished 13, goals 0, collisions 1
+update 200/320, steps 409600, finished 14, goals 0, collisions 0
+update 210/320, steps 430080, finished 8, goals 0, collisions 2
+update 220/320, steps 450560, finished 13, goals 0, collisions 0
+update 230/320, steps 471040, finished 11, goals 0, collisions 0
+update 240/320, steps 491520, finished 9, goals 0, collisions 0
+update 250/320, steps 512000, finished 13, goals 0, collisions 1
+update 260/320, steps 532480, finished 10, goals 0, collisions 0
+update 270/320, steps 552960, finished 9, goals 0, collisions 1
+update 280/320, steps 573440, finished 17, goals 0, collisions 3
+update 290/320, steps 593920, finished 9, goals 0, collisions 0
+update 300/320, steps 614400, finished 10, goals 0, collisions 3
+update 310/320, steps 634880, finished 16, goals 0, collisions 0
+update 320/320, steps 655360, finished 10, goals 0, collisions 0
+Saved checkpoints/ppo.msgpack, reload action [ 0.97507226 -0.933806  ], measured update loop 17.5 s
+
+Two-map prototype evaluation, seeds 2000-2063
+map 0 ppo: 64/64 goals, 0 collisions, 0 timeouts
+map 0 random: 0/64 goals, 13 collisions, 51 timeouts
+map 1 ppo: 64/64 goals, 0 collisions, 0 timeouts
+map 1 random: 0/64 goals, 13 collisions, 51 timeouts
+map 2 ppo: 0/64 goals, 2 collisions, 62 timeouts
+map 2 random: 0/64 goals, 34 collisions, 30 timeouts

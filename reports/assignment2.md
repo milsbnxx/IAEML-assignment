@@ -50,6 +50,8 @@ The rollout stores the Gaussian sample before tanh. For that same sample, the ta
 
 The pilot used episode seeds 1000–1063. Every pilot episode on map 2 ended in a collision. The two-map control and final model used the same training seed, budget and evaluation seeds 2000–2063. The control had 20 collisions and 44 timeouts on map 2. Its route passed through a fixed wall. The validated planner replaced that route with one that cleared the wall. The final run reached the goal in every one of these map 2 episodes. All three checkpoints and the episode records are included. [Pilot](../results/single_map/evaluation/summary.json) · [Two-map control](../results/snapshot/evaluation/summary.json) · [Final comparison](../results/evaluation/summary.json)
 
+During prototyping, rolling resistance could push full braking beyond the intended limit of 5 m/s². Before the cap was fixed, the single-map run on map 2 had 64 collisions. A two-map prototype on map 2 had 2 collisions and 62 timeouts. The three comparable runs in the table above all use the corrected braking limit. The early console logs are included so the prototype results can be distinguished from the controlled runs. [Prototype run output](../results/exploratory/console.txt)
+
 ### Held-out episodes
 
 After the final model was fixed, each policy ran 64 more full-start episodes per map using seeds 3000–3063. The two policies share the initial state for a given map and seed. The random policy samples each action component uniformly from [-1, 1] on every step. Return is the undiscounted episode sum. Distance is measured at the last state in metres.
