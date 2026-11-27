@@ -1,0 +1,36 @@
+{
+  "config": {
+    "seed": 7,
+    "maps": [
+      0,
+      2
+    ],
+    "route_mode": "validated",
+    "updates": 2,
+    "envs": 4,
+    "steps": 16,
+    "epochs": 2,
+    "minibatches": 2,
+    "hidden": 64,
+    "learning_rate": 0.00035,
+    "gamma": 0.99,
+    "gae_lambda": 0.95,
+    "clip": 0.2,
+    "value_coef": 0.5,
+    "entropy_coef": 0.003,
+    "grad_clip": 0.5,
+    "initial_short_probability": 0.65
+  },
+  "transitions": 128,
+  "seconds_including_update_compilation": 5.056062307000047,
+  "devices": [
+    "TFRT_CPU_0"
+  ],
+  "python": "3.12.14",
+  "jax": "0.7.2",
+  "observation_size": 25,
+  "reloaded_action": [
+    0.05603679642081261,
+    -0.03613937273621559
+  ]
+}
