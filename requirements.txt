@@ -1,8 +1,8 @@
-jax
-chex
-optax
-equinox
-flax        # use flax or equinox
-
-numpy
-pygame
+jax[cpu]==0.7.2
+chex==0.1.90
+optax==0.2.6
+equinox==0.13.2
+flax==0.11.2
+numpy==2.3.5
+pygame==2.6.1
+matplotlib==3.10.8

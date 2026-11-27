@@ -95,7 +95,7 @@ class PygameFrontend:
         for start, end in zip(pixels[:-1], pixels[1:]):
             pygame.draw.line(self.screen, BLUE, start, end, 3)
             
-    def draw_rays_transparent(self, screen: pygame.Surface, agent_pos, rays, cell_size, alpha=80):
+    def draw_rays_transparent(self, screen: pygame.Surface, agent_pos, rays, cell_size, alpha=80, color=(255, 0, 0)):
         """
         Draw transparent red rays from the agent's position.
 
@@ -116,7 +116,7 @@ class PygameFrontend:
         for vec in rays:
             end_px = (int(agent_px[0] + vec[1] * cell_size),
                     int(agent_px[1] + vec[0] * cell_size))
-            pygame.draw.line(ray_surf, (255, 0, 0, alpha), agent_px, end_px, 2)
+            pygame.draw.line(ray_surf, (*color, alpha), agent_px, end_px, 2)
 
         screen.blit(ray_surf, (0, 0))
 

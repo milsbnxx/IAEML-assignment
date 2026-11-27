@@ -10,7 +10,7 @@ from env.base import BaseEnvParams, BaseEnvState, BaseEnv
 class AutoResetWrapper(equinox.Module):
     env: BaseEnv = equinox.field(static=True)
     env_params: BaseEnvParams = equinox.field(static=True)
-    init_state: BaseEnvState = equinox.field(static=True)
+    init_state: BaseEnvState
 
     @equinox.filter_jit
     def reset(
